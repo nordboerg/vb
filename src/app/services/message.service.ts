@@ -3,13 +3,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
+import { Message } from '../model/message.model';
+
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type':  'application/json'
   })
 };
-
-import { Message } from '../model/message.model';
 
 @Injectable({
   providedIn: 'root'
